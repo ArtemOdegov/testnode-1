@@ -1,0 +1,22 @@
+{
+  "name": "booking-api",
+  "version": "1.0.0",
+  "description": "API для бронирования мест на мероприятия",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node migrations/migrate.js",
+    "test:setup": "node scripts/test-setup.js",
+    "test:api": "node scripts/test-api.js",
+    "check:user": "node scripts/check-db-user.js"
+  },
+  "keywords": ["booking", "api", "events"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
+}
+
